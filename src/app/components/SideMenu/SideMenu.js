@@ -10,6 +10,6 @@ export const SideMenu = () => {
           return <li key={link}>{link}</li>;
         })}
       </ul>
-    </div>
+    </div> 
   );
 };

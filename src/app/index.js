@@ -2,6 +2,7 @@ import React, { Fragment } from 'react';
 import {Navbar} from './components/Navbar/Navbar'
 import {CardsList} from './components/CardsList/CardsList'
 import {SideMenu} from "./components/SideMenu/SideMenu";
+import {list} from '../data'
 import './styles/App.css'
 
 
@@ -18,7 +19,7 @@ return (
         <SideMenu/>
        
         <div className="col-sm-9">
-          <CardsList/>
+          <CardsList data={list}/>
         </div>
       </div>
     </div>
