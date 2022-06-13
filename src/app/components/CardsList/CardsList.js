@@ -1,18 +1,18 @@
 
 import { Card } from "../Card/Card";
 
-export const CardsList = ({data}) => {
+export const CardsList = ({data,category}) => {
 
-  const fruits=data[0]
-  console.log(fruits)
+  const grocery=data[category]
+  console.log(grocery)
 
   return (
     <div className="col-sm">
       <div className="row">
 
         {
-         fruits.map(fruit=>{
-           return <Card fruit={fruit} />;
+         grocery.map(fruit=>{
+           return <Card key={fruit.ref} fruit={fruit} />;
              
 
           })
