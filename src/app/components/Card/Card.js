@@ -6,7 +6,7 @@ export const Card = (props) => {
         <img
           width="170"
           height="170"
-          src={process.env.PUBLIC_URL + `/assets/0/citron`}
+          src={process.env.PUBLIC_URL + `/assets/0/citron.png`}
           alt=""
         />
         <div className="card-body">

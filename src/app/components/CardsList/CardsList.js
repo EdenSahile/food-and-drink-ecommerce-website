@@ -5,7 +5,7 @@ export const CardsList = (props) => {
   return (
     <div className="col-sm">
       <div className="row">
-       list products
+     <Card/>
       </div>
     </div>
   );
