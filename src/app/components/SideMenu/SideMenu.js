@@ -1,8 +1,8 @@
 
-import React, {useState} from 'react'
+import React from 'react'
 
 
-export const SideMenu = ({loadCategory}) => {
+export const SideMenu = ({loadCategory,category}) => {
   
 const links = ["Fruits", "Légumes", "Produits Frais", "Epicerie", "Boissons"];
 
@@ -13,8 +13,10 @@ const links = ["Fruits", "Légumes", "Produits Frais", "Epicerie", "Boissons"];
     <div className="col-sm-3 sidebar">
       <ul>
         {links.map((link,index) => {
-          return <li key={link}
-          onClick={()=>loadCategory(index)}>{link}</li>;
+          return(
+           <li className={category === index ? 'active':null} key={link}
+          onClick={()=>loadCategory(index)}>{link}</li>
+          )
         })}
       </ul>
     </div>

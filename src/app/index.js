@@ -16,21 +16,25 @@ const App = () => {
     setCategory(i);
   };
   
+
+
 return (
   <>
-    <Navbar/>
+    <Navbar />
+
+
 
     <div className="container">
       <div className="row">
-        <SideMenu loadCategory={loadCategory}/>
-       
+        <SideMenu loadCategory={loadCategory} category={category} />
+
         <div className="col-sm-9">
-          <CardsList data={list} category={category}/>
+          <CardsList data={list} category={category} />
         </div>
       </div>
     </div>
   </>
-)
+);
 
 }
 export default App;

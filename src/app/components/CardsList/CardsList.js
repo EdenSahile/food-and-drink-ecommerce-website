@@ -4,7 +4,7 @@ import { Card } from "../Card/Card";
 export const CardsList = ({data,category}) => {
 
   const grocery=data[category]
-  console.log(grocery)
+
 
   return (
     <div className="col-sm">
