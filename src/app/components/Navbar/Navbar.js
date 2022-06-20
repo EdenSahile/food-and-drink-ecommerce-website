@@ -1,7 +1,7 @@
 import React from 'react'
 
 
-export const Navbar = () => {
+export const Navbar = ({filter,setIsFiltering}) => {
   return (
     <nav className="navbar orange navbar-expand-lg navbar-light bg-light fixed-top">
       <a className="navbar-brand crimson" href="/">
@@ -29,6 +29,16 @@ export const Navbar = () => {
                 type="search"
                 placeholder="Search"
                 aria-label="Search"
+                onChange={(e)=>{
+                  setIsFiltering(e.target.value.length>0)
+                  filter(e.target.value)
+
+                } 
+                
+                
+                }
+
+  
               />
             </form>
           </div>

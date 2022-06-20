@@ -1,4 +1,4 @@
-export const Card = ({fruit}) => {
+export const Card = ({item}) => {
 
   return (
     <div className="col-sm-4">
@@ -6,16 +6,16 @@ export const Card = ({fruit}) => {
         <img
           width="170"
           height="170"
-          src={process.env.PUBLIC_URL + `/assets/${fruit.category}/${fruit.image}`}
-          alt={fruit.name}
+          src={process.env.PUBLIC_URL + `/assets/${item.category}/${item.image}`}
+          alt={item.name}
         />
         <div className="card-body">
           <div className="row">
             <div className="col-sm-6">
-              <h4>{fruit.name}</h4>
+              <h4>{item.name}</h4>
             </div>
             <div className="col-sm-6">
-              <p>{fruit.price} €</p>
+              <p>{item.price} €</p>
               <button
                 className="btn btn-warning btn-sm"
                 data-toggle="modal"

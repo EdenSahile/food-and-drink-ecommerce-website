@@ -145,7 +145,7 @@ const fresh = [
   {
     ref: "fresh_1",
     category: 2,
-    name: "Milk",
+    name: "lait",
     price: 2.99,
     unit: "pièce",
     image: "milk.png"
@@ -153,7 +153,7 @@ const fresh = [
   {
     ref: "fresh_2",
     category: 2,
-    name: "Beurre à tartiner",
+    name: "Beurre",
     price: 1.99,
     unit: "pièce",
     image: "beurre.png"
